@@ -1,6 +1,10 @@
-
-CC := g++ -D_GLIBCXX_USE_CXX11_ABI=0 -g -o JSONParser
 SOURCE_DIR := ./src
-INCLUDE_DIR := -I $(SOURCE_DIR)/Parser
+INCLUDE_DIR := ./include
+BINARY_DIR := ./bin
+
+CC := g++ -D_GLIBCXX_USE_CXX11_ABI=0 -g -o $(BINARY_DIR)/JSONParser
+
 all:
-	$(CC) $(SOURCE_DIR)/main.cpp $(SOURCE_DIR)/Parser/Parser.cpp $(INCLUDE_DIR)
+	@echo "Building..."
+	$(CC) $(SOURCE_DIR)/*.cpp -I $(INCLUDE_DIR)
+	@echo "Done."

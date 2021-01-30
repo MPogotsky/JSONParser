@@ -15,7 +15,7 @@ private:
 
 public:
   Parser()
-  :filePath("/home/pahotski/LinuxProjects/JSONParser/test.json"){
+  :filePath("/home/pahotski/LinuxProjects/JSONParser/spike/test.json"){
   }
 
   std::string dataIntoString();
