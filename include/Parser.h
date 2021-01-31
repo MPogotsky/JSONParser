@@ -5,6 +5,11 @@
 #include <fstream>
 #include <string>
 #include <sstream>
+#include <algorithm>
+
+#include <cstring> //Used to output errors
+#include <cerrno>
+
 
 class Parser{
 private:
